@@ -14,13 +14,13 @@ To generate example input files `python example_data_generator_main.py` in examp
 See <a href="https://ieeexplore.ieee.org/document/9678753">Peak Shift Estimation: A Novel Method to Estimate Ranking of Selectively Omitted Examination for details of the algorithm.
 
 ## Requirements
-When you run `main.py`, you need Python 3.9.7 and requirements as below.
+When you run `main.py`, you need Python 3.11.8 and requirements as below.
 
 ```
 FIXME
-matplotlib==3.4.3
-numpy==1.21.2
-pandas==1.3.2
+pyclustering==0.10.1.2
+pandas==2.2.0
+numpy==1.23.2
 ```
 
 # Note
