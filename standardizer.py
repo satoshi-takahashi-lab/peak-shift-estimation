@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-
+import shutil
 
 INPUT_DIR = "./example_data/"
 SUCCESSFUL_NUM_PATH = "successful_num.csv"
@@ -10,6 +10,9 @@ SUCCESSFUL_RATE_PATH = "successful_rate.csv"
 
 
 def main():
+    shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
     successful_df = pd.read_csv(
         os.path.join(INPUT_DIR, SUCCESSFUL_NUM_PATH), index_col=0
     )
